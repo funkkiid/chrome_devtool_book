@@ -1,12 +1,12 @@
-#建议和技巧——Elements篇
+# 建议和技巧——Elements篇
 
-##使用标尺
+## 使用标尺
 在 Settings > General > Show rulers a ruler 中可以开启标尺，当鼠标悬浮在元素上面或者将其选中，标尺就会显示自动显示出来。
 
 ![](https://developer.chrome.com/devtools/docs/tips-and-tricks/image_53.png)
 
 
-##CSS属性自动补全
+## CSS属性自动补全
 DevTools支持CSS属性名和值的自动补全（包括带前缀的），在补全列表中你就可以看到当前元素是可以设置哪些属性的。
 
 当你输入属性名或者其值的时候，DevTools会自动给出提示，使用上下箭头可以在提示列表中进行选择。给元素添加属性后，页面就会立刻生效。
@@ -23,14 +23,14 @@ DevTools支持CSS属性名和值的自动补全（包括带前缀的），在补
 
 ![](https://developer.chrome.com/devtools/docs/tips-and-tricks/image_57.png)
 
-##颜色选择器
+## 颜色选择器
 DevTools内置了一个颜色选择器，用鼠标单击颜色的小方块，就会开启选择器。使用选择器可以选择页面中的任何颜色。（译注：这个非常给力，尤其是参考某个页面的时候）
 
 ![](https://developer.chrome.com/devtools/docs/tips-and-tricks/colorpickercanary.png)
 
 按住`shift`并单击颜色值，可以改变颜色的格式。
 
-##增加 CSS 样式
+## 增加 CSS 样式
 在一个css规则中大括号中间的任何位置单击鼠标都可以为当前元素添加一个新的CSS属性，添加后属性会立刻生效。
 
 ![](https://developer.chrome.com/devtools/docs/tips-and-tricks/image_60.png)
@@ -51,12 +51,12 @@ DevTools内置了一个颜色选择器，用鼠标单击颜色的小方块，就
 
 ![](https://developer.chrome.com/devtools/docs/tips-and-tricks/image_65.png)
 
-##拖拽页面元素
+## 拖拽页面元素
 在 Elements 面板里，可以拖拽一个元素来随意调整它的位置。
 
 ![](https://developer.chrome.com/devtools/docs/tips-and-tricks/image_66.png)
 
-##强制元素状态
+## 强制元素状态
 是不是有时希望强行的改变一个元素的状态?
 
 + 在一个子元素上右键，选择‘审查元素’
@@ -65,7 +65,7 @@ DevTools内置了一个颜色选择器，用鼠标单击颜色的小方块，就
 
 ![](https://developer.chrome.com/devtools/docs/tips-and-tricks/image_67.png)
 
-##编写调试Sass
+## 编写调试Sass
 
 > 注意: 要在Chrome中调试Sass 需要3.3.0 (pre-release) 以上的 Sass 编译器, 支持source map生成。
 

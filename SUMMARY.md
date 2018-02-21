@@ -16,5 +16,5 @@
     * [小技巧——网络篇&设置](learn_basic/tips_and_tricks_part_network.md)
 * [工具使用]()
     * [样式编辑与DOM介绍(todo)](using_tools/dom_and_styles.md)
-    * [CSS预处理器(todo)](using_tools/dom_and_styles.md)
+    * [CSS预处理器(todo)](using_tools/css-preprocessors.md)
     * [应用存储(todo)](using_tools/resource_panel.md)

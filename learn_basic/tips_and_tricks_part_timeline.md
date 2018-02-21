@@ -1,6 +1,6 @@
-#建议和技巧——Timeline篇
+# 建议和技巧——Timeline篇
 
-##使用帧模式分析页面
+## 使用帧模式分析页面
 在Timeline面板中，你可以看到web 应用内的耗时分布，例如执行DOM事件、渲染页面布局或者绘制页面元素等。你可以通过：页面帧、事件和实际内存使用三个方面发现程序的问题：
 
 ![](https://developer.chrome.com/devtools/docs/tips-and-tricks/image_0.png)
@@ -29,7 +29,7 @@ Timeline开启时，圆点会从灰色变为红色。开启监控后，在页面
 
 
 
-##使用warning找出强制布局事件
+## 使用warning找出强制布局事件
 在Timeline面板中，如果你看到一个黄色的三角警告符号，这表示你的某些代码会触发强制/同步布局事件。
 
 理想情况下，我们通常避免不必要的布局事件被触发，因为这些事件对页面的性能影响很大。
@@ -40,7 +40,7 @@ Timeline开启时，圆点会从灰色变为红色。开启监控后，在页面
 
 
 
-##分享或分析他人的Timeline
+## 分享或分析他人的Timeline
 使用Timeline的导入/导出功能，你可以分享自己的Timeline数据或者分析其他人的数据。使用`Ctrl` + `E` 或者 `Cmd` + `E` 记录一段Timeline数据，在Timeline内右键选择`Save Timeline data`可以导出自己的Timeline数据，右键选择`Load Timeline Data`可以导入其他的数据。
 
 ![](https://developer.chrome.com/devtools/docs/tips-and-tricks/image_6.png)
@@ -52,7 +52,7 @@ Timeline开启时，圆点会从灰色变为红色。开启监控后，在页面
 
 [更多：DevTools Console API - 标注Timeline](./using_console.md#标注-Timeline)
 
-##FPS 计数器/HUD平视显示器
+## FPS 计数器/HUD平视显示器
 DevTools 提供了一个FPS的监控计数器，用于显示可视化的帧频率。可以在设置-选中`Show FPS meter`来开启。
 
 ![](https://developer.chrome.com/devtools/docs/tips-and-tricks/image_8.png)

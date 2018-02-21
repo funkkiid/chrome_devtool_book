@@ -1,10 +1,10 @@
-#开发工作流
+# 开发工作流
 
 开发者工作流一般包含了几个步骤来实现特定的目标。使用DevTools可以优化你的工作流来节省完成任务的时间，例如定位文件或方法，连续的编辑脚本或样式，保存常用的代码片段，或者简单的重新布局来满足自己的需要。
 
 在本章中，我们将会探索一些列建议来使你的工作流更加的高效。
 
-##将Dock置于右侧进行垂直分屏编辑
+## 将Dock置于右侧进行垂直分屏编辑
 你可能发现将DevTools放置于浏览器底部，水平空间大了，但是垂直空间比较小。你可以将DevTools附着在浏览器窗口的右侧，这样你可以在审查左边的页面，在右边进行调试。
 
 右侧的Dock布局可能适用于下面的场景：
@@ -45,7 +45,7 @@
 > 注意: 我们支持驼峰式书写的检索,例如，要打开FooBarScript.js, 你只需要输入FBaSc就可以了,这可以节约时间。
 
 
-###在当前文件内搜索
+### 在当前文件内搜索
 
 在指定文件内搜索一个特定的字符串，可以通过下面的快捷键：
 
@@ -56,14 +56,14 @@
 
 ![](https://developer.chrome.com/devtools/docs/authoring-development-workflow/sources_findone.jpg)
 
-###在当前文件替换文本
+### 在当前文件替换文本
 
 除了支持文件内的文本定位之外，DevTools也支持单处和多处文本替换。勾选`Replace`后，窗口会显示第二个输入框来输入要替换内容的新数值。
 
 ![](https://developer.chrome.com/devtools/docs/authoring-development-workflow/sources_find.jpg)
 
 
-###全局文本搜索
+### 全局文本搜索
 
 如果你希望在页面加载的所有文件中搜索一段特殊的字符串，你可以使用下面的快捷键进行全局搜索：
 
@@ -74,14 +74,14 @@
 
 ![](https://developer.chrome.com/devtools/docs/authoring-development-workflow/sources_findall.jpg)
 
-###使用正则表达式搜索
+### 使用正则表达式搜索
 要使用正则表达式进行搜索，只需要在搜索框中输入表达式，勾选`Regular expression`然后敲击回车。
 
 ![](https://developer.chrome.com/devtools/docs/authoring-development-workflow/sources_regex.jpg)
 
 上图的例子中，我们看到如何用正则表达式找到`<div></div>`标签中的匹配内容.
 
-###函数过滤器或者文件内选择器
+### 函数过滤器或者文件内选择器
 如果你需要更细的粒度，你可以定位到文件内特定的JavaScript方法或者CSS规则。
 
 打开你选择的页面，然互打开源码面板。你可以使用下面的快捷键打开函数/选择器搜索窗口：
@@ -92,7 +92,7 @@
 ![](https://developer.chrome.com/devtools/docs/authoring-development-workflow/function_filter.png)
 根据你选择的文件类型不同，你将看到相应的JavaScript函数或者CSS声明。直接输入一个函数或声明的名字就可以在下拉列表中看到，选择即可定位到函数或声明的定义的位置。
 
-###跳转到特定行号
+### 跳转到特定行号
 DevTools也支持跳转到编辑器的特定行号中。选择一个文件进行编辑，使用下面的快捷键就可以打开跳转的对话框：
 
 + `Ctrl` + `L` (Windows)
@@ -102,10 +102,10 @@ DevTools也支持跳转到编辑器的特定行号中。选择一个文件进行
 ![](https://developer.chrome.com/devtools/docs/authoring-development-workflow/sources_line.jpg)
 
 
-##实时编辑脚本&样式
+## 实时编辑脚本&样式
 DevTools支持动态的实时额编辑样式和脚本而不需要刷新整个页面。这个功能在测试设计的变更和编写脚本原型的时候比较有用。
 
-###脚本
+### 脚本
 JavaScript代码可以直接在源码面板中进行编辑，要打开一个特定的脚本文件进行编辑：
 
 
@@ -126,7 +126,7 @@ JavaScript代码可以直接在源码面板中进行编辑，要打开一个特�
 >注意: Workspaces 特性已经支持本地文件的编辑，[了解更多](https://developer.chrome.com/devtools/docs/workspaces.html)。
 
 
-###样式
+### 样式
 DevTools也有编辑样式的工作流。打开元素面板，在界面的右侧的一些列子面板中可以看到样式。审查页面的元素时，当前节点的所有属性会被在此处列出来。
 
 ![](https://developer.chrome.com/devtools/docs/authoring-development-workflow/styles_inspect.jpg)
@@ -149,7 +149,7 @@ DevTools也有编辑样式的工作流。打开元素面板，在界面的右侧
 在这里，你可以像在普通编辑器里一样编辑文件，不同的是，这里可以看到实时的编辑效果。
 
 
-##另存为
+## 另存为
 一旦你完成了修改，你可以直接将其保存。
 
 在保存文件前，确认已经打开了文件编辑的面板，无论是在源码面板的左侧目录树中打开：
@@ -169,7 +169,7 @@ DevTools也有编辑样式的工作流。打开元素面板，在界面的右侧
 ![](https://developer.chrome.com/devtools/docs/authoring-development-workflow/saveas_save.jpg)
 
 
-##本地修改
+## 本地修改
 DevTools也会保存本地代码修改的版本历史。如果你已经在Chrome中编辑了脚本或者样式，你可以在文件名右键，选择"Local modifications"来查看修改历史。
 
 ![](https://developer.chrome.com/devtools/docs/authoring-development-workflow/saveas_localmodifications.jpg)
@@ -193,7 +193,7 @@ DevTools也会保存本地代码修改的版本历史。如果你已经在Chrome
 最后"apply revision content"会采用某个特定时间修改的版本。
 
 
-##定制 JavaScript 代码片段
+## 定制 JavaScript 代码片段
 有时候你可能会希望保存一些小的代码片段、书签和工具以备在浏览器调试代码的时候使用。代码片段是DevTools中的新特性，允许你在源码面板中创建、保存并运行JavaScript代码。该功能目前在[Chrome Canary](https://tools.google.com/dlpage/chromesxs)可用.
 
 ![](https://developer.chrome.com/devtools/docs/authoring-development-workflow/sources_hero.jpg)
@@ -207,7 +207,7 @@ DevTools也会保存本地代码修改的版本历史。如果你已经在Chrome
 
 Brian Grinstead 在Github上维护了一个代码片段的项目[bgrins.github.io/devtools-snippets](http://bgrins.github.io/devtools-snippets/).
 
-###开始
+### 开始
 要开始使用代码片段，先打开源码面板。如果你还没做其他的操作，其界面应该如下图所示：
 
 ![](https://developer.chrome.com/devtools/docs/authoring-development-workflow/sources_default.jpg)
@@ -216,7 +216,7 @@ Brian Grinstead 在Github上维护了一个代码片段的项目[bgrins.github.i
 
 ![](https://developer.chrome.com/devtools/docs/authoring-development-workflow/sources_expand.jpg)
 
-###创建 Snippets
+### 创建 Snippets
 Snippets 包含两个面板，左侧的为文件目录树，右侧为snippet的具体内容。编辑snippet的体验和在源码面板中操作体验很类似。
 
 ![](https://developer.chrome.com/devtools/docs/authoring-development-workflow/sources_creating.jpg)
@@ -225,7 +225,7 @@ Snippets 包含两个面板，左侧的为文件目录树，右侧为snippet的�
 
 ![](https://developer.chrome.com/devtools/docs/authoring-development-workflow/snippets_new.png)
 
-###Snippet 文件名
+### Snippet 文件名
 Snippet 文件名是自动生成的, 不过你也可以在其创建的时候自定义。
 
 ![](https://developer.chrome.com/devtools/docs/authoring-development-workflow/snippets_filename.png)
@@ -234,7 +234,7 @@ Snippet 文件名是自动生成的, 不过你也可以在其创建的时候自�
 
 ![](https://developer.chrome.com/devtools/docs/authoring-development-workflow/snippets_remove.png)
 
-###编辑和执行 Snippets
+### 编辑和执行 Snippets
 从左侧文件列表中选择一个 snippet打开，在右侧编辑窗口中可纯编写或粘贴任何JavaScript代码，包括函数和表达式。
 
 ![](https://developer.chrome.com/devtools/docs/authoring-development-workflow/snippets_editor.png)
@@ -258,7 +258,7 @@ snippet的输出将会显示在编辑器下方的终端中。
 ![](https://developer.chrome.com/devtools/docs/authoring-development-workflow/snippets_evaluated.png)
 
 
-###本地修改
+### 本地修改
 如同源码编辑一样，Snippets同样支持查看本地修改历史，并回退到某个历史版本。
 
 在编辑器中右键，选择`Local modifications...`
@@ -266,13 +266,13 @@ snippet的输出将会显示在编辑器下方的终端中。
 ![](https://developer.chrome.com/devtools/docs/authoring-development-workflow/snippets_local.png)
 
 
-###断点调试，观察表达式以及更多
+### 断点调试，观察表达式以及更多
 你在源码面板中使用的一些特性，例如添加观察表达式，调试断点，作用域变量，和保存文件在snippet中同样可用。
 
 阅读源码面板的相关的文档来了解这些特性。
 ![](https://developer.chrome.com/devtools/docs/authoring-development-workflow/sources_breakpoints.jpg)
 
-###保存 Snippets
+### 保存 Snippets
 Snippets 可以直接在浏览器保存以便以后访问，也可以导出到文件系统中。在编辑器中右键可以查看保存选项。
 
 
@@ -282,13 +282,13 @@ Snippets 可以直接在浏览器保存以便以后访问，也可以导出到�
 > 注意: Snippets 存储在 DevTools 的 localStorage.当使用另存为的时候，你可以像存储脚本一样将其存成文件。
 
 
-###导航 Snippets
+### 导航 Snippets
 与源码面板中的脚本和CSS类似，Snippets 也支持快速的文件定位。
 
 ![](https://developer.chrome.com/devtools/docs/authoring-development-workflow/snippet_filter.png)
 
 
-##资料
+## 资料
 + [Chrome DevTools Revolutions 2013: Workspaces](http://www.html5rocks.com/en/tutorials/developertools/revolutions2013/#toc-workspaces)
 + [My workflow: Never having to leave the DevTools | remy sharp](http://remysharp.com/2012/12/21/my-workflow-never-having-to-leave-devtools/)
 + [The Breakpoint With Addy Osmani And Paul Lewis - Snippets | youtube](http://www.youtube.com/watch?feature=player_detailpage&v=ktwJ-EDiZoU#t=553s)

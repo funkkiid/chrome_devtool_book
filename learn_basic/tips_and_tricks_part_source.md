@@ -1,7 +1,7 @@
-#建议和技巧——代码篇
+# 建议和技巧——代码篇
 
 
-##调试&DOM编辑
+## 调试&DOM编辑
 
 在元素上右键，选择 ‘Break on Subtree Modifications’: 当脚本遍历到该元素子节点并且进行修改操作时，断点调试器就会自动被触发。
 
@@ -10,13 +10,13 @@
 同样值得注意的是设置“ Attribute modifications”选项可以在元素的inline style变化时触发调试器，这在调试DOM动画的时候很有用。
 
 
-##追踪未捕获异常
+## 追踪未捕获异常
 在 Source 面板，双击 `暂停执行脚本`按钮（`||`）,在未捕获的异常出现时，调试器就会开启，保存调用栈和程序当前的状态信息。
 
 ![](https://developer.chrome.com/devtools/docs/tips-and-tricks/image_32.png)
 
 
-##条件断点
+## 条件断点
 DevTools支持条件断点，我们都知道在代码的行号上单击鼠标可以在当前行设置一个普通断点，程序执行到这里就会暂停。
 
 ![](https://developer.chrome.com/devtools/docs/tips-and-tricks/image_33.png)
@@ -38,7 +38,7 @@ DevTools支持条件断点，我们都知道在代码的行号上单击鼠标可
 [扩展阅读：JavaScript断点调试](http://www.google.com/url?q=http%3A%2F%2Fwww.randomthink.net%2Fblog%2F2012%2F11%2Fbreakpoint-actions-in-javascript%2F&sa=D&sntz=1&usg=AFQjCNE9yz1n3H6Boru1bl11nQdiUwmR4w)
 
 
-##清晰显示JavaScript代码
+## 清晰显示JavaScript代码
 一般web页面的代码都是minified压缩的。DevTools支持将代码格式化显示，使代码可读：
 
 + 前往Source面板选择你想要查看的JavaScript代码
@@ -55,12 +55,12 @@ DevTools支持条件断点，我们都知道在代码的行号上单击鼠标可
 ![](https://developer.chrome.com/devtools/docs/tips-and-tricks/image_39.png)
 
 
-##收藏表达式或者变量值
+## 收藏表达式或者变量值
 在调试过程中，你可能需要一遍又一遍的输入相同的变量名或者表达式，有了DevTools你可以将这些常用的变量和表达式添加到`Watch Expression`中。你可以直接对这些内容进行修改，或者只是用于在代码运行的过程中观察这些指的变化。
 
 ![](https://developer.chrome.com/devtools/docs/tips-and-tricks/image_40.png)
 
-##查看内部属性
+## 查看内部属性
 假设你定义了一个变量`s`，它可以进行下面的操作：
 
     s.substring(1, 4)  // returns 'ell'
@@ -76,25 +76,25 @@ DevTools支持条件断点，我们都知道在代码的行号上单击鼠标可
 
 [扩展阅读:通过DevTools学习JavaScript](https://gist.github.com/paulirish/4158604)
 
-##轻松调试 XHRs
+## 轻松调试 XHRs
 在调试窗口中打开“XHR Breakpoints”部分，你可以添加一个URL或者一个字符串来，指定发起某种XMLHttpRequest时开启程序调试。你也可以在任何XHR发起时都进入调试：
 
 ![](https://developer.chrome.com/devtools/docs/tips-and-tricks/image_41.jpg)
 
-##检索元素上注册的事件
+## 检索元素上注册的事件
 打开 Elements面板，在DOM树中用鼠标选中一个元素。注意：你也可以在控制台中使用`getEventListeners(targetNode)`选择。
 
 接下来在右侧窗口，展开"Event Listeners"选项。在这里会看到，当前元素所绑定事件列表。
 
 ![](https://developer.chrome.com/devtools/docs/tips-and-tricks/image_42.png)
 
-##Esc快速打开控制台
+## Esc快速打开控制台
 在 Source面板中调试的时候，你有时需要同时访问控制台。这时只需要按`Esc`键，就可以打开控制台。
 你可以在控制台中执行JavaScript代码，不过更加给力的地方在于，在代码的调试断点执行JavaScript的环境就是当前暂停的程序上下文。（译注：因此你可以在此时编写代码查看一些特定的数据）
 
 ![](https://developer.chrome.com/devtools/docs/tips-and-tricks/image_43.png)
 
-##更加高效的处理断点
+## 更加高效的处理断点
 当你的程序在调试断点暂停的时候，你可以进行更多的操作：
 
 ![](https://developer.chrome.com/devtools/docs/tips-and-tricks/image_44.png)
@@ -112,14 +112,14 @@ DOM Breakpoints 会显示那些在 Elements面板被添加调试断点的元素�
 XHR Breakpoints 的作用在于为XMLHttpReauest请求设置了断点，指定URL可以观察具体的异步请求情况。
 
 
-##异常时暂停
+## 异常时暂停
 你可能希望在有异常被抛出的时候暂停JavaScript的执行，然后去检查函数调用栈，作用域变量和app的状态。
 
 ![](https://developer.chrome.com/devtools/docs/tips-and-tricks/image_45.png)
 
 点击Scripts面板顶部的黑色暂停按钮可以切换不同的异常处理模式。很可能你并不希望在所有的异常抛出时都去暂停程序，除非你调试的代码都有try/catch语句。
 
-##全文检索
+## 全文检索
 如果你想在所有文件中检索一个字符串，可以使用下面的快捷键：
 
 + `Ctrl` + `Shift` + `F` (Windows, Linux)
@@ -129,7 +129,7 @@ XHR Breakpoints 的作用在于为XMLHttpReauest请求设置了断点，指定UR
 
 ![](https://developer.chrome.com/devtools/docs/tips-and-tricks/image_50.png)
 
-##使用DevTools和源码地图调试 CoffeeScript 
+## 使用DevTools和源码地图调试 CoffeeScript 
 
 源码地图是一种将编译好的成产环境代码还原到开发环境的原始代码的方式，并且是语言无关的。
 

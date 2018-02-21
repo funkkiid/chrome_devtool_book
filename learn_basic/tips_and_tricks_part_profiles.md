@@ -1,7 +1,7 @@
-#建议和技巧——Profiles篇
+# 建议和技巧——Profiles篇
 
 
-##利用`三次快照`发现JavaScript内存泄露
+## 利用`三次快照`发现JavaScript内存泄露
 
 1. 打开DevTools 并切换到 Profiles 面板
 2. 执行一个会导致内存泄露的操作
@@ -18,7 +18,7 @@
 [PPT：排除GMail中的内存泄露](https://docs.google.com/presentation/d/1wUVmf78gG-ra5aOxvTfYdiLkdGaR9OhXRnOlIcEmu2s/pub?start=false&loop=false&delayms=3000&slide=id.g1d65bdf6_0_0)
 
 
-##了解Heap 分析器中的不同节点含义
+## 了解Heap 分析器中的不同节点含义
 红色的节点表示仍然存在的分离DOM树的一部分，并且DOM树种的某个节点仍然在被JavaScript引用（可能是一个闭包或者某些属性）
 
 黄色的节点表示一个分离DOM树的引用，可能是某个对象的属性或者是一个数组元素，在元素和`window`之间可能存在着一条属性链（例如 window.foo.bar[2].baz）
@@ -28,7 +28,7 @@
 [扩展阅读：理解Heap分析器中的节点](https://plus.google.com/u/0/115133653231679625609/posts/hEMupRLRJSF)
 
 
-##Heap 分析器的其他视图
+## Heap 分析器的其他视图
 一个常见的疑惑是，Profile面板中快照结果里的 Comparison, Dominator, Containment 和 Summary 四种视图之间有什么区别。 四个视图分别从不同角度分析快照数据：
 
 Comparison 视图可以显示哪些对象已经被垃圾回收正确释放了。 一般在该视图中比较一次操作前后的内存快照数据。通过检查空闲内存中的变量增量和引用数来确定内存泄露的存在和原因。
